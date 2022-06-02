@@ -1,0 +1,241 @@
+  .bg-gray {
+    background-color: #f4f3f3;
+  }
+   
+  .bg-orange {
+    background-color: rgb(15, 144, 170);
+  }
+
+  .navbar {
+    height: 7vh;
+  }
+  
+  .container-home {
+    height: 100vh;
+    background-color: rgb(220, 223, 226);
+  }
+
+.card {
+  width: 160vh;
+}
+
+.kiri {
+  margin-left: 100px;
+}
+
+.kanan {
+  border: 1px solid rgb(235, 230, 230);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+ 
+.contact-person .btn {
+  border-radius: 20px;  
+}
+
+.socmed a {font-size: 20px;
+  padding: 9px;
+  background-color: #080808;
+  border-radius: 100%;
+  color: white;
+  margin: auto;
+  text-decoration: none;
+}
+
+.socmed {
+  font-size: 30px;
+  word-spacing: 20px;
+  }
+
+  .container-add-project-form {
+    height: 93vh;
+    background-color: rgb(220, 223, 226);
+  }
+  
+  .container-add-project-form form {
+    width: 430px;
+  }
+  
+  .container-add-project-form form input,
+  textarea {
+    border: 1px solid rgb(199, 199, 199);
+    background-color: rgb(255, 251, 251);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container-add-project-form form label .form-check-label {
+    font-size: 20px;
+  }
+
+  .form-check {
+    width: 220px;
+  }
+
+  .form-check .text-gray {
+      color: rgb(134, 133, 134);
+  }
+    
+  .date {
+      column-gap: 10px;
+  }
+
+  .container-add-project-form form .text-end .btn {
+    border-radius: 20px;  
+  }
+
+  .container-contact-form {
+    height: 93vh;
+    background-color: rgb(220, 223, 226);
+  }
+
+  .container-contact-form form input,
+  select,
+  textarea {
+    border: 1px solid rgb(199, 199, 199) !important;
+    background-color: rgb(255, 251, 251) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .container-contact-form form {
+    width: 430px;
+  }
+
+  .container-contact-form form .text-end .btn {
+    border-radius: 20px;  
+  }
+  
+
+  .container-my-project {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .card-project {    
+    border-radius: 10px;
+  }
+  
+  
+.card-body-project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-body-project .container-name {
+  height: 90px;
+  border-radius: 10px;
+}
+
+.card-body-project p {
+  height: 100px;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 12%;
+}
+
+.card-body-project .text-end {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.card-body-project .text-end .btn {
+  border-radius: 20px;
+  padding: 0px 60px;
+}
+
+
+
+/* Blog Detail */
+
+.my-project-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0
+}
+
+.my-project-detail-container {
+  width: 900px;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+.my-project-detail div.paragraf {
+  width: 900px;
+
+}
+
+.my-project-detail-container .detcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.my-project-detail-container .detcon .Lkiri {
+  width: 600px;
+  margin-right: 10px;
+  
+}
+
+.my-project-detail-container .detcon .Rkanan {
+  width: 400px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;   
+}
+
+.my-project-detail-container .detcon .Lkiri img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.detcon .Rkanan img {
+  width: 25px;
+  height: 25px;
+}
+
+.detcon .Rkanan .text1 {
+ 
+  margin-top: 0;
+}
+
+
+
+.detcon .Rkanan .text2 .log {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.detcon .Rkanan .text2 .log2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+.my-project-detail-container h4 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+.my-project-detail-container h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 20px;
+  margin-left: 280px;
+  margin-right: 100px;
+}
+
+ .paragraf {
+  margin-top: 20px;
+  text-align: justify;
+}
+

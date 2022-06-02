@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/public/assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/d84bcfe29f.js" crossorigin="anonymous"></script>
+    <title>Personal Web - Nurul Anisah</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-gray">
+      <div class="container">
+        <a class="navbar-brand me-5" href="/">
+          <img src="/public/assets/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold active me-3" aria-current="page" href="/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/add-project"
+                >Add Project</a
+              >
+            </li>
+          </ul>
+            <ul class="navbar-nav">
+              {{#if isLogin}}
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page">{{user.name}},</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="/logout">Logout</a>
+              </li>
+              {{else}}
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="/register">Register</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="/login">Login</a>
+              </li>
+              {{/if}}
+          </ul>
+          <a class="btn bg-black text-white" href="/contact-me"> Contact Me </a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+  
+      
+    <form action=""></form>
+    <div class="my-project-detail">
+      <div class="my-project-detail-container mt-5">
+        <h3>{{detail.name}}</h3>
+  
+        <div class="detcon mt-5">
+          <div class="Lkiri">
+            <img src="/public/assets/my-project-img-detail.png" alt="detail" />
+          </div>
+  
+          <div class="Rkanan">            
+            <div class="text1">
+              <h4>Duration</h4>
+              <img src="/public/assets/calendar.png" class="mb-3"> {{detail.start_date}} s/d {{detail.end_date}}</img>
+              <br>
+              <img src="/public/assets/clock.png"> {{detail.duration}}</img>
+            </div>            
+            <div class="text2 mt-5">
+              <h4>Technologies</h4>
+              <div class="log">
+                {{#if detail.technologies.[0]}} 
+                <img src="/public/assets/nodejs.png"></i> Node JS</img>
+                {{/if}} 
+                {{#if detail.technologies.[2]}} 
+                <img src="/public/assets/js.png"> Javascript</img>
+                {{/if}} 
+              </div>
+              <div class="log2">
+                {{#if detail.technologies.[1]}} 
+                <img src="/public/assets/reactjs.png"> React JS</i></img>
+                {{/if}} 
+                {{#if detail.technologies.[3]}} 
+                <img src="/public/assets/typescript.png"> TypeScript</img>
+                {{/if}} 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+  
+      <div class="paragraf">
+        <p>
+          {{detail.description}}
+        </p>
+      </div>
+  
+    </div>
+    </form>
+    </div>
+    
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
